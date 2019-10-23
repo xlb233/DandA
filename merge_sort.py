@@ -27,3 +27,6 @@ def merge_sort(arr):
     left = merge_sort(left)
     right = merge_sort(right)
     return merge(left, right)
+
+
+print(merge_sort([0, -1, 3, 9, 5, 1, -3, -9, 2]))
