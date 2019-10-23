@@ -1,5 +1,5 @@
 # 分治，分和治
-# merge是和
+# merge是和(治)
 
 
 def merge(left, right):
