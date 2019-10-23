@@ -1,3 +1,5 @@
+import random
+
 def shell_sort(arr):
     n = len(arr)
     # 定义递增序列的间距，并逐步缩小间距直到1
@@ -15,4 +17,4 @@ def shell_sort(arr):
     return arr
 
 
-print(shell_sort([3, -2, 0, 0, 7, 1, 2, 3, -9]))
+print(shell_sort([random.random()*5000 for _ in range(10000)]))

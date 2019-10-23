@@ -9,4 +9,4 @@ def bubble_sort(arr):
     return arr
 
 
-print(bubble_sort([random.random()*5000 for _ in range(100)]))
+print(bubble_sort([random.random()*5000 for _ in range(10000)]))

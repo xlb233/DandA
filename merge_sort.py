@@ -1,5 +1,6 @@
 # 分治，分和治
 # merge是和(治)
+import random
 
 
 def merge(left, right):
@@ -29,4 +30,4 @@ def merge_sort(arr):
     return merge(left, right)
 
 
-print(merge_sort([0, -1, 3, 9, 5, 1, -3, -9, 2]))
+print(merge_sort([random.random() * 5000 for _ in range(10000)]))
