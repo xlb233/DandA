@@ -24,12 +24,14 @@ def merge(left, right):
 
 # merge_sort是分
 def merge_sort(arr):
+    # 终止条件
     if len(arr) <= 1:
         return arr
     mid = len(arr) // 2
     left = arr[:mid]
     right = arr[mid:]
-
+    # 此处再次给left和right赋的值是终止条件后的left和right
+    # 也就是只有一个值的数组
     left = merge_sort(left)
     right = merge_sort(right)
     return merge(left, right)
