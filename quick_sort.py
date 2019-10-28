@@ -28,3 +28,8 @@ def quick_sort(arr, left, right):
 a = [random.random() * 5000 for _ in range(10000)]
 quick_sort(a, 0, len(a) - 1)
 print(a)
+
+# 选出pivot后，一般将其放在最左或最右。
+# 以将pivot放在最左端为例，则循环遍历应该从最右边开始：需要保证第一个被覆盖的数字是pivot自己。
+# 原因很简单，想象一个场景，数组最右端的数字比pivot小：
+# 若遍历从最左端开始，则第一个比pivot大的数字就会覆盖掉这个比pivot小的数字，导致该数字再也不会出现，数组就会发生变化
