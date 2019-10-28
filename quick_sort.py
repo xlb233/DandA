@@ -14,7 +14,7 @@ def quick_sort(arr, left, right):
         while arr[left] < pivot and left < right:
             left += 1
         arr[right] = arr[left]
-    #   此时low==high,将pivot数字与low与high相遇处的数字进行交换
+    #   此时low==high,将low与high相遇处的数字替换为pivot
     #   这样一来，所有在pivot左边的数字都是小于pivot的，右边则都是大于pivot的
     arr[left] = pivot
     quick_sort(arr, low, left - 1)
