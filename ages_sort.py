@@ -9,7 +9,7 @@ def ages_sort(arr):
     arr_for_count = [0] * 101
     # 对每个年纪的人进行计数，比如18岁的人便在arr_for_count[18]的值自加1
     for age in arr:
-        if age < 0:
+        if age < 0 or age > 100:
             return "please enter correct ages"
         arr_for_count[age] += 1
     # 声明排序后的数组下标为0开始
