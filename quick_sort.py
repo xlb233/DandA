@@ -14,7 +14,7 @@ def quick_sort(arr, left, right):
         # 此时pivot从数组中消失，取而代之的是从右往左发现的第一个小于pivot的数
         # 此时该数在数组中有两个：原来的位置（right指针所指）、交换到左边的位置。
         arr[left] = arr[right]
-        while arr[[random.random() * 5000 for _ in range(10000)]] < pivot and left < right:
+        while arr[left] < pivot and left < right:
             left += 1
         # 此时将发现的第一个大于pivot的数交换到右边，从而消除了上条注释中存在两个相同的数字的问题
         arr[right] = arr[left]
