@@ -32,6 +32,6 @@ def has_path_core(matrix, rows, cols, path_to_find, row, col, current_path_lengt
     return has_path
 
 
-print(search_one_by_one([['a', 'b', 't', 'g'], ['c', 'f', 'c', 's'], ['j', 'd', 'e', 'h']], 'abfb'))
+print(search_one_by_one([['a', 'b', 't', 'g'], ['c', 'f', 'c', 's'], ['j', 'd', 'e', 'h']], 'bfce'))
 
 
